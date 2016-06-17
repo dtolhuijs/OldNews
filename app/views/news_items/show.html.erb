@@ -1,4 +1,6 @@
 <p id="notice"><%= notice %></p>
+<%= image_tag @news_item.image_url.to_s, class: 'bg' %>
+
 
 <p>
   <strong>Title:</strong>
@@ -15,7 +17,6 @@
   <%= @news_item.content %>
 </p>
 
-<%= image_tag @news_item.image_url.to_s, class: 'bg' %>
 
 <div class="content">
 <h1><%= @news_item.title %></h1>
